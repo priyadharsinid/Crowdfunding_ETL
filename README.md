@@ -13,3 +13,8 @@ Create the Contacts DataFrame
 
 Create the Crowdfunding Database
 
+
+Team members:
+David Oceguera
+Priyadharsini Duraiarasan
+
