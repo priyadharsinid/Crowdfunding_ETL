@@ -1,5 +1,5 @@
 
---create table category,subcategory,contacts,campaign
+--create tables category,subcategory,contacts,campaign
 
 CREATE TABLE category (
 	category_id VARCHAR(10) NOT NULL,
@@ -27,11 +27,11 @@ CREATE TABLE contacts (
 CREATE TABLE campaign(
    cf_id INTEGER NOT NULL,
    contact_id INTEGER NOT NULL,
-   company_name varchar(50) NOT NULL,
-   description varchar(250) ,
+   company_name VARCHAR(50) NOT NULL,
+   description VARCHAR(250) ,
    goal FLOAT NOT NULL,
    pledged FLOAT NOT NULL ,
-   outcome INTEGER NOT NULL ,
+   outcome VARCHAR NOT NULL ,
    backers_count INTEGER  NOT NULL ,
    country VARCHAR(50) NOT NULL,
    currency VARCHAR(10) NOT NULL,
@@ -45,5 +45,11 @@ CREATE TABLE campaign(
    FOREIGN KEY (subcategory_id) REFERENCES subcategory (subcategory_id)
 )
 
+--Get data from tables category,subcategory,contacts,campaign
+
+select * from category;
+select * from subcategory;
+select * from contacts;
+select * from campaign;
 
 
